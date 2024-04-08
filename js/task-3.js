@@ -5,8 +5,8 @@ function checkForSpam(message) {
   const forbiddenWord2 = "sale";
 
   if (
-    message.toLowerCase().includes("spam") ||
-    message.toLowerCase().includes("sale")
+    message.toLowerCase().includes(forbiddenWord1) ||
+    message.toLowerCase().includes(forbiddenWord2)
   ) {
     return true;
   }
