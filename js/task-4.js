@@ -2,7 +2,6 @@
 
 function getShippingCost(country) {
   let price;
-  const message = `Shipping to ${country} will cost ${price} credits`;
 
   switch (country) {
     case "China":
@@ -21,6 +20,7 @@ function getShippingCost(country) {
       return "Sorry, there is no delivery to your country";
   }
 
+  const message = `Shipping to ${country} will cost ${price} credits`;
   return message;
 }
 
